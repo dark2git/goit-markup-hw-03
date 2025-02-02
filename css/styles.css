@@ -61,6 +61,10 @@ img {
   display: block;
 }
 
+section {
+  width: 100vw;
+}
+
 h1,
 .title {
   font-weight: 700;
