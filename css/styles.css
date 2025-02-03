@@ -198,7 +198,7 @@ address ul li a:active {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .header {
@@ -210,10 +210,14 @@ address ul li a:active {
   justify-content: space-between;
 }
 
+.container .navigation {
+  display: flex;
+  gap: 76px;
+}
+
 .navigation,
 .nav-list {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
 }
 
@@ -230,7 +234,7 @@ address ul li a:active {
 
 .navigation,
 .addr {
-  padding: 24px 0 24px 0;
+  padding: 24px 0;
 }
 
 
