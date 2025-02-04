@@ -31,6 +31,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding: 24px 0;
 }
 
 .spanlogo {
@@ -107,12 +108,15 @@ a:hover {
   color: #404bbf;
 }
 
+/* щоб працювала геометрія падінгів потрібен display block */
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -126,7 +130,6 @@ a:hover {
 }
 
 .section-one {
-  /* width: 1440px; */
   height: 600px;
   background: var(--navy-blue);
 }
@@ -183,6 +186,12 @@ address ul li a:active {
 
 .addr {
   font-style: normal;
+}
+
+/* display block for padding positioning */
+.addr-link {
+  padding: 24px 0;
+  display: block;
 }
 
 .section-three {
@@ -249,9 +258,4 @@ address ul li a:active {
 .addr-list {
   display: flex;
   gap: 40px;
-}
-
-.navigation,
-.addr {
-  padding: 24px 0;
 }
