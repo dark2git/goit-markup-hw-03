@@ -167,6 +167,32 @@ a:hover {
   color: var(--white);
 }
 
+.section-two {
+  height: 344px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.sec-two-list {
+  display: flex;
+  gap: 24px;
+}
+
+.sec-two-list-item {
+  flex-basis: calc(100% - (3 * 24) / 3);
+}
+
 .order-button:hover,
 .order-button:focus {
   background: #404bbf;
