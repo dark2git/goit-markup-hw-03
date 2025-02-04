@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -24,7 +24,7 @@ body {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -148,24 +148,24 @@ a:hover {
 
 /* white-space: nowrap; додав щоб не переносився текст */
 .order-button {
-   cursor: pointer;
-   border-radius: 4px;
-   padding: 16px 32px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-   background: var(--iris);
-   display: block;
-   margin: 48px auto 0;
+  background: var(--iris);
+  display: block;
+  margin: 48px auto 0;
 
   font-family: var(--font-family);
-   font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
 
-   line-height: 1.5;
-   letter-spacing: 0.04em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   white-space: nowrap;
-   color: var(--white);
+  color: var(--white);
 }
 
 .order-button:hover,
