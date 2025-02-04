@@ -146,7 +146,6 @@ a:hover {
   margin: 068px auto 0 auto;
 }
 
-/* white-space: nowrap; додав щоб не переносився текст */
 .order-button {
   cursor: pointer;
   border-radius: 4px;
@@ -164,7 +163,7 @@ a:hover {
 
   line-height: 1.5;
   letter-spacing: 0.04em;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   color: var(--white);
 }
 
