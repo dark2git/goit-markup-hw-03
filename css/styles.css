@@ -37,6 +37,8 @@ body {
   color: #2e2f42;
 }
 
+/* завжди скидаємо дефолтну геометрію */
+
 h1,
 h2,
 h3,
@@ -214,7 +216,7 @@ address ul li a:active {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
