@@ -48,10 +48,12 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -129,6 +131,7 @@ a:hover {
   padding: 120px 0;
 }
 
+/* section one */
 .section-one {
   height: 600px;
   background: var(--navy-blue);
@@ -166,6 +169,7 @@ a:hover {
   color: var(--white);
 }
 
+/* section two */
 .section-two {
   height: 344px;
 }
@@ -188,10 +192,35 @@ a:hover {
   gap: 24px;
 }
 
-.sec-two-list-item {
-  flex-basis: calc(100% - (3 * 24) / 3);
+.sec-two-list-item .sec-head,
+.sec-two-list-item .sec-par {
+  text-align: start;
 }
 
+.sec-two-list-item .sec-head {
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.sec-two-list-item .sec-par {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.sec-two-list-item {
+  flex-basis: calc(100% - (3 * 24) / 4);
+}
+
+/* section three */
 .section-three {
   height: 732px;
   background: var(--cloud);
@@ -217,7 +246,7 @@ a:hover {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
-  flex-basis: calc(100% - (3 * 24) / 3);
+  flex-basis: calc(100% - (3 * 24) / 4);
   height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -246,6 +275,37 @@ a:hover {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate);
+}
+
+/* section four */
+.section-four {
+  height: 1240px;
+}
+
+.sec-four_list {
+  display: flex;
+  gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.sec-four_list-item {
+  height: 420px;
+  width: 360px;
+}
+
+.sec-four_list-item .sec-head,
+.sec-four_list-item .sec-par {
+  text-align: start;
+}
+
+.card-info {
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .order-button:hover,
