@@ -149,7 +149,7 @@ a:hover {
 .order-button {
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -163,7 +163,6 @@ a:hover {
 
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* white-space: nowrap; */
   color: var(--white);
 }
 
@@ -191,6 +190,62 @@ a:hover {
 
 .sec-two-list-item {
   flex-basis: calc(100% - (3 * 24) / 3);
+}
+
+.section-three {
+  height: 732px;
+  background: var(--cloud);
+}
+
+.sec-main-header {
+  line-height: 1.11;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.sec-three_list {
+  display: flex;
+  gap: 24px;
+}
+.sec-three_list-item {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  flex-basis: calc(100% - (3 * 24) / 3);
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+
+.name_and_position {
+  margin: 32px 16px;
+}
+
+.sec-head {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.sec-par {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--slate);
 }
 
 .order-button:hover,
@@ -222,16 +277,6 @@ address ul li a:active {
   display: block;
 }
 
-.section-three {
-  background-color: #f4f4fd;
-}
-
-.sec-main-header {
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-}
-
 .basement {
   background-color: #2e2f42;
 }
@@ -242,10 +287,6 @@ address ul li a:active {
 
 .basement-paragraph {
   color: #f4f4fd;
-}
-
-.sec-three_list-item {
-  background-color: #ffffff;
 }
 
 .sec-par {
