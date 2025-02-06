@@ -1,4 +1,7 @@
+/* Custom Properties */
 :root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
   --iris: #4d5ae5;
   --ocean: #404bbf;
   --navy-blue: #2e2f42;
@@ -13,40 +16,9 @@
   --dairy: #fcfcfc;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  background-color: #ffffff;
-}
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  padding: 24px 0;
-}
-
-.spanlogo {
-  color: #2e2f42;
-}
-
-/* завжди скидаємо дефолтну геометрію */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', sans-serif;
+/* Reset Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
 }
@@ -56,8 +28,7 @@ p {
   padding: 0;
 }
 
-ul,
-ol {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -67,12 +38,33 @@ img {
   display: block;
 }
 
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  background-color: #ffffff;
+}
+
 section {
   width: 100vw;
 }
 
-h1,
-.title {
+.section {
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Typography */
+h1, .title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07143;
@@ -96,6 +88,7 @@ h3 {
   color: #2e2f42;
 }
 
+/* Links */
 a {
   font-weight: 400;
   font-size: 12px;
@@ -110,7 +103,47 @@ a:hover {
   color: #404bbf;
 }
 
-/* щоб працювала геометрія падінгів потрібен display block */
+/* Header */
+.header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  padding: 24px 0;
+}
+
+.spanlogo {
+  color: #2e2f42;
+}
+
+/* Navigation */
+.container .navigation {
+  display: flex;
+  gap: 76px;
+}
+
+.navigation,
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation .nav-link {
+  gap: 40px;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -127,11 +160,37 @@ a:hover {
   color: #404bbf;
 }
 
-.section {
-  padding: 120px 0;
+/* Address */
+.addr {
+  font-style: normal;
 }
 
-/* section one */
+.addr,
+.addr-list {
+  display: flex;
+  gap: 40px;
+}
+
+.addr-link {
+  padding: 24px 0;
+  display: block;
+}
+
+address ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+address ul li a:hover,
+address ul li a:focus,
+address ul li a:active {
+  color: #404bbf;
+}
+
+/* Hero Section (Section One) */
 .section-one {
   height: 600px;
   background: var(--navy-blue);
@@ -152,24 +211,26 @@ a:hover {
 .order-button {
   cursor: pointer;
   border-radius: 4px;
-  /* padding: 16px 32px; */
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
   display: block;
   margin: 48px auto 0;
-
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
 }
 
-/* section two */
+.order-button:hover,
+.order-button:focus {
+  background: #404bbf;
+}
+
+/* Features Section (Section Two) */
 .section-two {
   height: 344px;
 }
@@ -190,6 +251,10 @@ a:hover {
 .sec-two-list {
   display: flex;
   gap: 24px;
+}
+
+.sec-two-list-item {
+  flex-basis: calc(100% - (3 * 24) / 4);
 }
 
 .sec-two-list-item .sec-head,
@@ -216,11 +281,7 @@ a:hover {
   color: var(--slate);
 }
 
-.sec-two-list-item {
-  flex-basis: calc(100% - (3 * 24) / 4);
-}
-
-/* section three */
+/* Team Section (Section Three) */
 .section-three {
   height: 732px;
   background: var(--cloud);
@@ -242,6 +303,7 @@ a:hover {
   display: flex;
   gap: 24px;
 }
+
 .sec-three_list-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
@@ -249,7 +311,8 @@ a:hover {
   flex-basis: calc(100% - (3 * 24) / 4);
   height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
 
@@ -257,6 +320,43 @@ a:hover {
   margin: 32px 16px;
 }
 
+/* Portfolio Section (Section Four) */
+.section-four {
+  height: 1240px;
+}
+
+.sec-four_list {
+  display: flex;
+  gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.sec-four_list-item {
+  height: 420px;
+  width: 360px;
+}
+
+.section-four .sec-four_list-item img {
+  height: 300px;
+  width: 360px;
+}
+
+.sec-four_list-item .sec-head,
+.sec-four_list-item .sec-par {
+  text-align: start;
+}
+
+.card-info {
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+}
+
+/* Common Section Styles */
 .sec-head {
   font-family: var(--font-family);
   font-weight: 500;
@@ -277,66 +377,7 @@ a:hover {
   color: var(--slate);
 }
 
-/* section four */
-.section-four {
-  height: 1240px;
-}
-
-.sec-four_list {
-  display: flex;
-  gap: 24px;
-  row-gap: 48px;
-  flex-wrap: wrap;
-}
-
-.sec-four_list-item {
-  height: 420px;
-  width: 360px;
-}
-
-.sec-four_list-item .sec-head,
-.sec-four_list-item .sec-par {
-  text-align: start;
-}
-
-.card-info {
-  border-bottom: 1px solid var(--cornflower);
-  border-left: 1px solid var(--cornflower);
-  border-right: 1px solid var(--cornflower);
-  padding: 32px 16px;
-  width: 360px;
-  height: 120px;
-}
-
-.order-button:hover,
-.order-button:focus {
-  background: #404bbf;
-}
-
-address ul li a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-address ul li a:hover,
-address ul li a:focus,
-address ul li a:active {
-  color: #404bbf;
-}
-
-.addr {
-  font-style: normal;
-}
-
-/* display block for padding positioning */
-.addr-link {
-  padding: 24px 0;
-  display: block;
-}
-
+/* Footer */
 .basement {
   background-color: #2e2f42;
 }
@@ -347,44 +388,4 @@ address ul li a:active {
 
 .basement-paragraph {
   color: #f4f4fd;
-}
-
-.sec-par {
-  font-size: 16px;
-}
-
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header {
-  border-bottom: 1px solid var(--cornflower);
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container .navigation {
-  display: flex;
-  gap: 76px;
-}
-
-.navigation,
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.navigation .nav-link {
-  gap: 40px;
-}
-
-.addr,
-.addr-list {
-  display: flex;
-  gap: 40px;
 }
