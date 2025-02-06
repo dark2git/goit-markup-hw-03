@@ -394,7 +394,7 @@ address ul li a:active {
 }
 
 .basement .spanlogo {
-  color: #f4f4fd;
+  color: var(--cloud);
 }
 
 .basement-paragraph {
