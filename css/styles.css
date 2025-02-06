@@ -380,6 +380,17 @@ address ul li a:active {
 /* Footer */
 .basement {
   background-color: #2e2f42;
+  height: 312px;
+  padding: 100px 0;
+}
+
+.basement .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.basement .logo {
+  padding-bottom: 16px;
 }
 
 .basement .spanlogo {
@@ -388,4 +399,5 @@ address ul li a:active {
 
 .basement-paragraph {
   color: #f4f4fd;
+  width: 264px;
 }
