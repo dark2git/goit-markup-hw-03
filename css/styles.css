@@ -129,6 +129,7 @@ a:hover {
   text-transform: uppercase;
   color: #4d5ae5;
   padding: 24px 0;
+  margin-right: 76px;
 }
 
 .spanlogo {
@@ -138,7 +139,7 @@ a:hover {
 /* Navigation */
 .container .navigation {
   display: flex;
-  gap: 76px;
+  /* gap: 76px; */
   align-items: center;
 }
 
@@ -162,7 +163,7 @@ a:hover {
   display: block;
 }
 
-.nav-list:last-child {
+.nav-list {
   margin-right: 50px;
 }
 
