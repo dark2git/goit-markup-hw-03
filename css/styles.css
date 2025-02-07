@@ -143,15 +143,12 @@ a:hover {
   align-items: center;
 }
 
-.navigation,
+.navigation
 .nav-list {
   display: flex;
   gap: 40px;
 }
 
-.navigation .nav-link {
-  gap: 40px;
-}
 
 .nav-link {
   font-weight: 500;
