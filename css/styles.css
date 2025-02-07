@@ -401,10 +401,10 @@ address ul li a:active {
   padding: 100px 0;
 }
 
-.basement .container {
+/* .basement .container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .basement .logo {
   margin-bottom: 16px;
